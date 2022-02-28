@@ -1,11 +1,24 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
-    <h1>WELCOME</h1>
+<body onload="generate_text()">
+    <div id="main-container">
+        <div id="main-content">
+            <div id="main-text-contaier">
+                <p id="main-text"></p>
+            </div>
+            <div id="button-container">
+                <button onclick="generate_text()" id="generate-button">
+                    GENERATE NEW TEXT
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

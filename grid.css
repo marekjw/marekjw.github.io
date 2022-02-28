@@ -1,0 +1,21 @@
+#main-container{
+    display: grid;
+}
+
+#main-content{
+    grid-area: main;
+}
+
+@media screen and (min-width: 600px){
+    #main-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: '. main .';
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    #main-container{
+        grid-template-areas: 'main';
+    }
+}
+
